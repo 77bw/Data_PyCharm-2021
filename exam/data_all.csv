@@ -1,0 +1,7 @@
+source,target,book,weight
+范蠡,西施,fei,12
+范蠡,阿青,fei,22
+阿青,西施,fei,7
+阿青,范蠡,fei,22
+西施,阿青,fei,7
+西施,范蠡,fei,8

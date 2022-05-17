@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Scrapy/itcast_spider/teacher.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Scrapy/test/runoob_spider/thousandPic.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Scrapy/wangyi/wangyi.json" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Scrapy/wangyi/wangyi_simple.json" charset="GBK" />
+  </component>
+</project>

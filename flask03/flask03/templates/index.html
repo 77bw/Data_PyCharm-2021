@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my page</title>
+    <script src="../static/js/jquery.js"></script> // ..为上一级的目录
+    ‘’‘
+    javaSript是一门编程语言，jQuery是javaSript中的一个库，jquery是JavaScript中的一个子集。
+    通过使用jQuery框架中的一些接口，我们可以更方便的实现一些网页操作。比起直接使用原生接口，jQuery框架优点多多。
+    ’‘’
+
+</head>
+
+<body>
+<h1> 疫情追踪 </h1>
+<h3>实时报道</h3>
+<button>点我</button>
+<script>   //使用jquery来操作
+    $("button").click(function(){
+        $.ajax({
+        url:"/ajax",  //请求地址
+        type:"post",   //请求类型
+        data:{"name":"张某","score":89},  //数据
+        success:function(d){       //请求成功的回调函数，d是返回的数据
+            $("h1").html("感染人数"+d);
+        },error:function() {   //请求失败执行
+            alert('ajax失败 ');
+        }
+       })
+    })
+</script>
+
+</body>
+</html>

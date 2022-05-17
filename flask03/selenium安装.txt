@@ -1,0 +1,27 @@
+1. selenium安装
+
+安装selenium
+在cmd环境下:
+首先查看python是否安装
+C:/Users/xxx>python --version //python -V
+Python 2.7.12
+通过pip安装selenium
+$pip install -U selenium  //提示安装pip
+$python -m pip install --upgrade pip
+$pip --version   //查看版本
+$pip install -U selenium  //安装
+$pip show selenium  //是否安装成功
+安装火狐,并在全局环境变量System Variables的Path中加入Firefox所在的安装路径，例如 ;D:\firfox
+下载火狐需要的geckodriver 地址: https://github.com/mozilla/geckodriver/releases
+解压后将geckdriver.exe 放到Python的目录下
+相应的，Chrome浏览器需要安装chromedriver，下载地址 http://chromedriver.storage.googleapis.com/index.html ，将chromedriver.exe放到Chrome的安装路径下，例如 C:\Program Files (x86)\Google\Chrome\Application  ，然后把改路径加入到环境变量Path中。我的电脑->属性->高级系统设置->环境变量--System变量Path增加 ;C:\Program Files (x86)\Google\Chrome\Application
+
+1.	导入包：from selenium.webdriver import Chrome,ChromeOptions
+2.	实例化对象：
+browser=Chrome()#1.创建谷歌对象
+3.	打开网址
+browser.get(url)#2.打开地址
+4.	xpath:
+#1.在谷歌浏览器打开网页：https://top.baidu.com/board?tab=realtime
+#2.选择第一条，然后查看元素，复制-xpath,ctrl+f,粘贴连接，//*[@id="sanRoot"]/main/div[2]/div/div[2]/div/div[2]/a/div[1]
+这里的div[1]只是第一条。我们只要div就可以看到前30条了.
